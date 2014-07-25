@@ -21,11 +21,19 @@ syntax keyword cppType Axis_t Stat_t
 syntax keyword cppType Font_t Style_t Marker_t Width_t Color_t SCoord_t
     \ Coord_t Angle_t Size_t
 
-" Colour constants
+" Colour Enums
 syntax keyword cppConstant kWhite kBlack kGray kRed kGreen kBlue kYellow
     \ kMagenta kCyan kOrange kSpring kTeal kAzure kViolet kPink
 
-" Boolean contstans
+" Booleans
 syntax keyword cppBoolean kTRUE kFALSE
+
+" Type constants
+syntax keyword cppConstant kMaxUChar kMaxChar kMinChar
+syntax keyword cppConstant kMaxUShort kMaxShort kMinShort
+syntax keyword cppConstant kMaxUInt kMaxInt kMinInt
+syntax keyword cppConstant kMaxULong kMaxLong kMinLong
+syntax keyword cppConstant kMaxULong64 kMaxLong64 kMinLong64
+syntax keyword cppConstant kBitsPerByte kNPOS
 
 let b:current_syntax = "root"
