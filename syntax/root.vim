@@ -20,4 +20,8 @@ syntax keyword cType Axis_t Stat_t
 syntax keyword cType Font_t Style_t Marker_t Width_t Color_t SCoord_t
     \ Coord_t Angle_t Size_t
 
+" Colour constants
+syntax keyword cConstant kWhite kBlack kGray kRed kGreen kBlue kYellow
+    \ kMagenta kCyan kOrange kSpring kTeal kAzure kViolet kPink
+
 let b:current_syntax = "root"
