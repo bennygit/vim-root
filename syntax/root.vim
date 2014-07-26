@@ -47,7 +47,8 @@ syntax keyword cppType
 
 " Filesystem and datastructures
 syntax keyword cppType
-    \ TDirectory TFile TTree TChain
+    \ TDirectory TFile
+    \ TTree TChain TBranch TLeaf
 
 " Text and Strings
 syntax keyword cppType
