@@ -44,4 +44,11 @@ syntax keyword cppType
     \ TObject TClass THtml
     \ TCollection TList TClonesArray
 
+" Histograms
+syntax keyword cppType
+    \ TH1 TH1C TH1S TH1I TH1F TH1D
+    \ TH2 TH2C TH2S TH2I TH2F TH2D
+    \ TH3 TH3C TH3S TH3I TH3F TH3D
+    \ THStack
+
 let b:current_syntax = "root"
