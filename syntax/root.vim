@@ -39,6 +39,7 @@ syntax keyword cppConstant
     \ kMaxULong64 kMaxLong64 kMinLong64
     \ kBitsPerByte kNPOS
 
+" ROOT Classes (Common)
 " Top-level Classes
 syntax keyword cppType
     \ TObject TClass THtml
@@ -50,5 +51,17 @@ syntax keyword cppType
     \ TH2 TH2C TH2S TH2I TH2F TH2D
     \ TH3 TH3C TH3S TH3I TH3F TH3D
     \ THStack
+
+" Functions and Fits
+syntax keyword cppType
+    \ TFormula
+    \ TF1 TF12 TF2 TF3
+    \ TFitResult TFitResultPtr
+
+" Graphics
+syntax keyword cppType
+    \ TCanvas TLegend
+    \ TGraph TGraph2D TGraph2DErrors
+    \ TAxis
 
 let b:current_syntax = "root"
