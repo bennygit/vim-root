@@ -64,4 +64,9 @@ syntax keyword cppType
     \ TGraph TGraph2D TGraph2DErrors
     \ TAxis
 
+" Mathematics
+" Physics Vector package
+syntax keyword cppType
+    \ TVector2 TVector3 TRotation TLorentzVector TLorenztRotation
+
 let b:current_syntax = "root"
