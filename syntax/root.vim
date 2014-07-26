@@ -39,4 +39,9 @@ syntax keyword cppConstant
     \ kMaxULong64 kMaxLong64 kMinLong64
     \ kBitsPerByte kNPOS
 
+" Top-level Classes
+syntax keyword cppType
+    \ TObject TClass THtml
+    \ TCollection TList TClonesArray
+
 let b:current_syntax = "root"
