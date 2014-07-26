@@ -49,6 +49,10 @@ syntax keyword cppType
 syntax keyword cppType
     \ TDirectory TFile TTree TChain
 
+" Text and Strings
+syntax keyword cppType
+    \ TString TText TLatex
+
 " Histograms
 syntax keyword cppType
     \ TH1 TH1C TH1S TH1I TH1F TH1D
