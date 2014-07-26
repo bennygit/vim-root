@@ -43,7 +43,11 @@ syntax keyword cppConstant
 " Top-level Classes
 syntax keyword cppType
     \ TObject TClass THtml
-    \ TCollection TList TClonesArray
+    \ TCollection TList TClonesArray TObjArray
+
+" Filesystem and datastructures
+syntax keyword cppType
+    \ TDirectory TFile TTree TChain
 
 " Histograms
 syntax keyword cppType
