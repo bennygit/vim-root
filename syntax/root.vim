@@ -1,13 +1,13 @@
 " Vim syntax file
 " Language:    ROOT Data Analysis Framework (C++)
 " Maintainer:  Matthew Parnell <matt@parnmatt.co.uk>
-" Last Change: 2014-07-25
+" Last Change: 2014-07-26
 " Remark:      To be used with filetype cpp
 " Remark:      Place file:  $VIMRUNTIME/syntax/root.vim
-" Remark:      ROOT webite: http://root.cern.ch/
+" Remark:      ROOT website: http://root.cern.ch/
 
 " Grouped as they are in http://root.cern.ch/root/html/Rtypes.h
-" Types
+" Primitive Type(def)s
 syntax keyword cppType
     \ Char_t UChar_t
     \ Short_t UShort_t
