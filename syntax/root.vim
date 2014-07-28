@@ -40,6 +40,11 @@ syntax keyword rootConstant
     \ kMaxULong64 kMaxLong64 kMinLong64
     \ kBitsPerByte kNPOS
 
+" ROOT Global Variables
+syntax keyword rootGlobalVariables
+    \ gApplication gClassTable gDebug gDirectory gEnv gFile gObjectTable
+    \ gPad gProgName gProgPath gROOT gRandom gRootDir gStyle gSystem
+
 " ROOT Classes (Common)
 " Top-level Classes
 syntax keyword rootClass
@@ -83,6 +88,7 @@ highlight default link rootBoolean Boolean
 highlight default link rootClass Type
 highlight default link rootConstant Constant
 highlight default link rootEnums Constant
+highlight default link rootGlobalVariables SpecialChar
 highlight default link rootTypedef Typedef
 
 let b:current_syntax = "root"
