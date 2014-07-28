@@ -114,11 +114,11 @@ updating the file when new commits are pulled.
 
 #### Arch Linux
 
+AUR package for the stable releases:
+<https://aur.archlinux.org/packages/vim-root/>
+
 AUR package for the `develop` branch:
 <https://aur.archlinux.org/packages/vim-root-git/>
-
-An AUR package for the stable releases will follow the first release.
-A link to it will appear here.
 
 ## Contributing
 
