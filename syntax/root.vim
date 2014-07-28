@@ -2,6 +2,7 @@
 " Language:    ROOT Data Analysis Framework (C++)
 " Maintainer:  Matthew Parnell <matt@parnmatt.co.uk>
 "              Oliver Lantwin  <oliver@lantwin.de>
+" Version:     1.0.0
 " Last Change: 2014-07-28
 " Remark:      To be used with filetype cpp
 " Remark:      Place file:  $VIMRUNTIME/syntax/root.vim
