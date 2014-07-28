@@ -48,12 +48,12 @@ syntax keyword rootGlobalVariables
 " ROOT Classes (Common)
 " Top-level Classes
 syntax keyword rootClass
-    \ TObject TClass THtml
-    \ TCollection TList TClonesArray TObjArray
+    \ TObject TClass TROOT
+    \ TCollection TList TClonesArray TObjArray TNtuple
 
 " Filesystem and datastructures
 syntax keyword rootClass
-    \ TDirectory TFile
+    \ TDirectory TFile TBrowser
     \ TTree TChain TBranch TLeaf
 
 " Text and Strings
@@ -78,6 +78,7 @@ syntax keyword rootClass
     \ TCanvas TLegend
     \ TGraph TGraphErrors TGraph2D TGraph2DErrors
     \ TAxis
+    \ THtml TPDF TSVG TPostScript
 
 " Mathematics
 " Physics Vector package
