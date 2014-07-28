@@ -70,7 +70,7 @@ syntax keyword rootClass
 " Graphics
 syntax keyword rootClass
     \ TCanvas TLegend
-    \ TGraph TGraph2D TGraph2DErrors
+    \ TGraph TGraphErrors TGraph2D TGraph2DErrors
     \ TAxis
 
 " Mathematics
