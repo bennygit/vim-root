@@ -7,20 +7,44 @@
 " Remark:      Place file:  $VIMRUNTIME/syntax/root.vim
 " Remark:      ROOT website: http://root.cern.ch/
 
+if v:version < 600
+    finish
+elseif exists("b:current_syntax")
+
+    " Is language C++
+    if b:current_syntax ==? "c" || b:current_syntax ==? "cpp"
+
+        " Ensure C++ syntax is loaded, rather than C
+        setfiletype cpp
+
+        let b:cpp = 1
+
+    elseif b:current_syntax ==? "python"
+        let b:cpp = 0
+    else
+        finish
+    endif
+endif
+
 " Grouped as they are in http://root.cern.ch/root/html/Rtypes.h
-" Primitive Typedefs
-syntax keyword rootTypedef
-    \ Char_t UChar_t
-    \ Short_t UShort_t
-    \ Int_t UInt_t
-    \ Seek_t Long_t ULong_t
-    \ Float_t Float16_t
-    \ Double_t Double32_t
-    \ LongDouble_t Text_t Bool_t Byte_t Version_t Option_t Ssiz_t Real_t
-    \ Long64_t ULong64_t
-    \ Axis_t Stat_t
-    \ Font_t Style_t Marker_t Width_t Color_t SCoord_t Coord_t Angle_t
-    \ Size_t
+" Not needed in PyROOT
+if !empty(b:cpp)
+
+    " Primitive Typedefs
+    syntax keyword rootTypedef
+        \ Char_t UChar_t
+        \ Short_t UShort_t
+        \ Int_t UInt_t
+        \ Seek_t Long_t ULong_t
+        \ Float_t Float16_t
+        \ Double_t Double32_t
+        \ LongDouble_t Text_t Bool_t Byte_t Version_t Option_t Ssiz_t
+        \ Real_t
+        \ Long64_t ULong64_t
+        \ Axis_t Stat_t
+        \ Font_t Style_t Marker_t Width_t Color_t SCoord_t Coord_t Angle_t
+        \ Size_t
+endif
 
 " Colour Enums
 syntax keyword rootEnums
@@ -92,4 +116,10 @@ highlight default link rootEnums Constant
 highlight default link rootGlobalVariables SpecialChar
 highlight default link rootTypedef Typedef
 
-let b:current_syntax = "root"
+if empty(b:cpp)
+    let b:current_syntax = "PyROOT"
+else
+    let b:current_syntax = "C++/ROOT"
+endif
+
+unlet b:cpp
