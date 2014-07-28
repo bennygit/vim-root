@@ -7,7 +7,7 @@ Initially inspired by *Theo Christoudias'* plugin: [cern_root.vim][].
 
 In contrast to [cern_root.vim][], this plugin is structured to work with
 common Vim plugin managers. It attempts to be semantically correct,
-which also allows seamless integration with with both the PyROOT, as
+which also allows seamless integration with both the PyROOT, as
 well as the original C++ implementation.
 
 [cern_root.vim]: http://www.vim.org/scripts/script.php?script_id=2387
@@ -105,7 +105,7 @@ Run the following in a terminal:
 
         $ rm -rf vim-root
 
-The above assumes you do not wish to keep the repository. If you do,
+The above presumes you do not wish to keep the repository. If you do,
 It is suggested to either hard- or soft-link the files, rather than
 move them and delete the repository. This gives the added advantage of
 updating the file when new commits are pulled.
@@ -114,10 +114,11 @@ updating the file when new commits are pulled.
 
 #### Arch Linux
 
-AUR development version (direct from `develop` branch):
-<https://aur.archlinux.org/packages/vim-root-git/>
+AUR package for the stable releases:
+<https://aur.archlinux.org/packages/vim-root/>
 
-AUR packages for stable releases will follow after first release.
+AUR package for the `develop` branch:
+<https://aur.archlinux.org/packages/vim-root-git/>
 
 ## Contributing
 
