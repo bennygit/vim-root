@@ -15,36 +15,46 @@ well as the original C++ implementation.
 ## Usage
 
 There are several methods for activating this plugin's syntax
-highlighting (including shorthand commands):
+highlighting:
 
-+ Assuming you are using the C++ implementation:
+| Command                     | Short hand            |
+| :-------------------------- | :-------------------- |
+| `:setfiletype cpp.root`     | `:setf cpp.root`      |
+| `:set filetype=cpp.root`    | `:se ft=cpp.root`     |
+| `:set syntax=cpp.root`      | `:se syn=cpp.root`    |
+| `:setfiletype python.root`  | `:setf python.root`   |
+| `:set filetype=python.root` | `:se ft=python.root`  |
+| `:set syntax=python.root`   | `:se syn=python.root` |
 
-        :setfiletype cpp.root
-        :setf cpp.root
 
-        :set filetype=cpp.root
-        :se ft=cpp.root
+However, the methods that hold the most power, are those that are
+set using an equality; it is easier to chain the syntax. Therefore
+**regardless** of whether you are using the C++ implementation or
+PyROOT, the following will include the syntax:
 
-+ Assuming you are using PyROOT:
-
-        :setfiletype python.root
-        :setf python.root
-
-        :set filetype=python.root
-        :se ft=python.root
-
-However, the latter holds the most power, it is easier to chain the
-syntax. Therefore **regardless** of whether you are using the C++
-implementation or PyROOT, the following will include the syntax:
-
-    :set filetype+=.root
-    :se ft+=.root
+| Command                | Short hand      |
+| :--------------------- | :-------------- |
+| `:set filetype+=.root` | `:se ft=.root`  |
+| `:set syntax+=.root`   | `:se syn=.root` |
 
 So long as Vim had detected the use of `c`, `cpp` or `python` before,
 which it almost certainly would if you have the following in your vimrc.
 
-    filetype on
-    syntax enable
+```VimL
+filetype on
+syntax enable
+```
+
+Although setting the filetype is more semantically correct, there can
+be some issues with plugins that use the `&filetype` variable to add
+functionality. If this occurs, then please inject the highlighting by
+setting the `&syntax` variable, as described above.
+
+Reïterating the safest method is to use:
+
+```Vim:
+:se syn+=.root
+```
 
 ## Installation
 
