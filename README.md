@@ -17,17 +17,14 @@ well as the original C++ implementation.
 There are several methods for activating this plugin's syntax
 highlighting:
 
-| --------------------------- | --------------------- |
 | Command                     | Short hand            |
-| --------------------------- | --------------------- |
+| :-------------------------- | :-------------------- |
 | `:setfiletype cpp.root`     | `:setf cpp.root`      |
 | `:set filetype=cpp.root`    | `:se ft=cpp.root`     |
 | `:set syntax=cpp.root`      | `:se syn=cpp.root`    |
-| --------------------------- | --------------------- |
 | `:setfiletype python.root`  | `:setf python.root`   |
 | `:set filetype=python.root` | `:se ft=python.root`  |
 | `:set syntax=python.root`   | `:se syn=python.root` |
-| --------------------------- | --------------------- |
 
 
 However, the methods that hold the most power, are those that are
@@ -35,12 +32,10 @@ set using an equality; it is easier to chain the syntax. Therefore
 **regardless** of whether you are using the C++ implementation or
 PyROOT, the following will include the syntax:
 
-| ---------------------- | ----------------|
 | Command                | Short hand      |
-| ---------------------- | --------------- |
+| :--------------------- | :-------------- |
 | `:set filetype+=.root` | `:se ft=.root`  |
 | `:set syntax+=.root`   | `:se syn=.root` |
-| ---------------------- | --------------- |
 
 So long as Vim had detected the use of `c`, `cpp` or `python` before,
 which it almost certainly would if you have the following in your vimrc.
