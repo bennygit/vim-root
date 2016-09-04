@@ -69,6 +69,18 @@ are not using a package manager, you may find it helpful.
 There are many different package managers, and it is assumed you know
 how to install the one of your choice and how to use them.
 
+### Vim Plug
+*(Author's suggestion)*
+
+Place this in your `.vimrc`:
+
+    Plug 'parnmatt/vim-root'
+
+Then run the following in Vim:
+
+    :source $MYVIMRC
+    :PlugInstall
+
 ### Vundle
 
 Place this in your `.vimrc`:
@@ -77,7 +89,7 @@ Place this in your `.vimrc`:
 
 Then run the following in Vim:
 
-    :source %
+    :source $MYVIMRC
     :PluginInstall
 
 *For Vundle version < 0.10.2, replace `Plugin` with `Bundle` above.*
@@ -90,7 +102,7 @@ Place this in your `.vimrc`:
 
 Then run the following in Vim:
 
-    :source %
+    :source $MYVIMRC
     :NeoBundleInstall
 
 ### Pathogen
@@ -121,15 +133,6 @@ move them and delete the repository. This gives the added advantage of
 updating the file when new commits are pulled.
 
 ### Packages
-
-#### Arch Linux
-
-AUR package for the stable releases:
-<https://aur.archlinux.org/packages/vim-root/>
-
-AUR package for the `develop` branch:
-<https://aur.archlinux.org/packages/vim-root-git/>
-
 ## Contributing
 
 If you want to help improve vim-root, please refer to `CONTRIBUTING.md`.
