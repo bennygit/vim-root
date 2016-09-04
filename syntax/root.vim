@@ -1,9 +1,8 @@
 " Vim syntax file
 " Language:    ROOT Data Analysis Framework (C++)
 " Maintainer:  Matthew Parnell <matt@parnmatt.co.uk>
-"              Oliver Lantwin  <oliver@lantwin.de>
-" Version:     1.0.0
-" Last Change: 2014-07-28
+" Version:     1.0.1
+" Last Change: 2016-09-04
 " Remark:      To be used with filetype cpp
 " Remark:      Place file:  $VIMRUNTIME/syntax/root.vim
 " Remark:      ROOT website: http://root.cern.ch/
@@ -49,8 +48,8 @@ endif
 
 " Colour Enums
 syntax keyword rootEnums
-    \ kWhite kBlack kGray kRed kGreen kBlue kYellow kMagenta kCyan
-    \ kOrange kSpring kTeal kAzure kViolet kPink
+    \ kWhite kBlack kGray kRed kPink kMagenta kViolet kBlue
+    \ kAzure kCyan kTeal kGreen kSpring kYellow kOrange
 
 " Booleans
 syntax keyword rootBoolean
