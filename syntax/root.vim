@@ -49,8 +49,8 @@ endif
 
 " Colour Enums
 syntax keyword rootEnums
-    \ kWhite kBlack kGray kRed kGreen kBlue kYellow kMagenta kCyan
-    \ kOrange kSpring kTeal kAzure kViolet kPink
+    \ kWhite kBlack kGray kRed kPink kMagenta kViolet kBlue
+    \ kAzure kCyan kTeal kGreen kSpring kYellow kOrange
 
 " Booleans
 syntax keyword rootBoolean
